@@ -206,7 +206,7 @@ main {
 
 #features-figures {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   justify-items: center;
   align-items: center;
   gap: 5%;
@@ -215,6 +215,7 @@ main {
 #features-figures figure {
   display: flex;
   flex-direction: column;
+  width: 25%;
   align-items: center;
 }
 
