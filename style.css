@@ -6,14 +6,14 @@
 
 /* generic styling */
 p {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   margin: 0.6rem 0;
 }
 
 body {
   font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 
 /* header styling */
@@ -178,4 +178,57 @@ main {
   margin-top: 0;
   font-size: 1rem;
   font-weight: 500;
+}
+
+/* section 4 (features) styling */
+
+#features-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 5%;
+  padding-top: 1.5%;
+  background-color: #c4c4c4;
+}
+
+#fs-title {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#fs-title h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#features-figures {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 5%;
+}
+
+#features-figures figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#features-figures img {
+  width: 40%;
+  height: auto;
+  justify-self: center;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+#features-figures figcaption {
+  padding-top: 2rem;
+  text-wrap: balance;
+  width: 50%;
+  text-align: center;
 }
