@@ -18,6 +18,8 @@ body {
 
 /* header styling */
 header {
+  top: 0;
+  position: sticky;
   padding: 1rem 1rem;
   display: flex;
   justify-content: space-between;
@@ -25,10 +27,9 @@ header {
   background-color: #8f8f8f;
 }
 
-#product-logo {
-  padding: 0.5rem 1rem;
-  border: 2px solid #8f8f8f;
-  background-color: #ffffff;
+#product-logo img {
+  width: 10%;
+  height: auto;
 }
 
 header nav {
@@ -52,6 +53,9 @@ header li {
   padding: 0.5rem 1rem;
   background-color: #ffffff;
   border: 2px solid #8f8f8f;
+  max-height: 2rem;
+  min-height: 1rem;
+  text-wrap: nowrap;
 }
 
 /* main styling */
@@ -60,7 +64,7 @@ main {
   flex-flow: column nowrap;
 }
 
-/* section 1 styling */
+/* section 1 (home) styling */
 
 #home-section {
   padding: 1rem 5rem;
@@ -79,7 +83,7 @@ main {
   margin: 2rem 2rem;
   padding: 0.5rem 1rem;
   flex: 2;
-  gap: 19%;
+  gap: 10%;
   align-items: flex-start;
 }
 
@@ -130,4 +134,33 @@ main {
 
 #hs-part2 p:nth-child(3) {
   margin-top: 0;
+}
+
+/* section 2 (companies) styling */
+
+#companies-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 3rem 1rem;
+  background-color: #ededed;
+}
+
+#companies-section p {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+#cs-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+#companies-section img {
+  width: 10%;
+  height: 10%;
 }
