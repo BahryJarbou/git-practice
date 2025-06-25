@@ -208,7 +208,7 @@ main {
   display: flex;
   justify-content: space-evenly;
   justify-items: center;
-  align-items: center;
+  align-items: stretch;
   gap: 5%;
 }
 
@@ -216,7 +216,9 @@ main {
   display: flex;
   flex-direction: column;
   width: 25%;
+  justify-content:space-between;
   align-items: center;
+  gap: 10px;
 }
 
 #features-figures img {
@@ -225,11 +227,77 @@ main {
   justify-self: center;
   border: 1px solid black;
   border-radius: 50%;
+  justify-self: flex-start;
 }
 
 #features-figures figcaption {
   padding-top: 2rem;
   text-wrap: balance;
-  width: 50%;
+  width: 100%;
   text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    * {
+        font-size: 0.5rem;
+    }
+    video {
+        width: 320px;
+        height: 240px;
+    }
+    /* 
+    #features-figures figures {
+        max-height: 60%;
+    }
+
+    #features-figures figcaption {
+        width: 100%;
+        height: 30%;
+    }
+    */
+}
+
+/* Small devices (portrait tablets and large phones, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+      * {
+        font-size: 0.6rem;
+    }
+    video {
+        width: 480px;
+        height: 360px;
+    }
+}
+ 
+/* Medium devices (landscape tablets, 768px to 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+      * {
+        font-size: 0.7rem;
+    }
+    video {
+        width: 640px;
+        height: 480px;
+}
+}
+ 
+/* Large devices (laptops/desktops, 992px to 1200px) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+      * {
+        font-size: 0.8rem;
+    }
+    video {
+        width: 800px;
+        height: 600px;
+}
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) {
+      * {
+        font-size: 1rem;
+    }
+    video {
+        width: 960px;
+        height: 720px;
+}
 }
